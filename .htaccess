@@ -33,3 +33,5 @@ AddType image/webp .webp
 
 # Keep source folders private if ever uploaded by mistake
 RedirectMatch 404 ^/(content|templates|scripts|_src|_legacy|docs)(/|$)
+# Repo files that are not part of the site
+RedirectMatch 404 ^/(README\.md|\.gitignore)$
