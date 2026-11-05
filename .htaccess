@@ -1,7 +1,12 @@
 # DZ Muay Thai, dzmuaythai.es (Apache / cPanel public_html)
 
-# Force HTTPS and no-www
 RewriteEngine On
+
+# Jiu-jitsu pages removed (S4.1): permanent redirects to the MMA pages (SEO plan-3nov)
+RewriteRule ^do/clases-de-jiu-jitsu-torre-del-mar\.html$ https://dzmuaythai.es/do/clases-de-mma-torre-del-mar.html [R=301,L]
+RewriteRule ^en/do/jiu-jitsu-lessons-torre-del-mar\.html$ https://dzmuaythai.es/en/do/mma-lessons-torre-del-mar.html [R=301,L]
+
+# Force HTTPS and no-www
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^ https://dzmuaythai.es%{REQUEST_URI} [L,R=301]
