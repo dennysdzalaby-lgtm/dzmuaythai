@@ -15,6 +15,7 @@ DirectoryIndex index.html
 ErrorDocument 404 /404.html
 AddDefaultCharset UTF-8
 AddType image/webp .webp
+AddCharset UTF-8 .txt
 
 # Compression
 <IfModule mod_deflate.c>
