@@ -1,3 +1,9 @@
+# robots.txt for dzmuaythai.es
+# Every crawler is allowed, including AI search crawlers
+# (OAI-SearchBot, Claude-SearchBot, PerplexityBot) and AI training
+# crawlers (GPTBot, ClaudeBot, Google-Extended, Applebot-Extended).
+# Decided by the owner on the board, 3 Nov 2026 (G3.1, G3.2).
 User-agent: *
 Allow: /
+
 Sitemap: https://dzmuaythai.es/sitemap.xml
